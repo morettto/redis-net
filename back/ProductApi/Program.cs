@@ -9,7 +9,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddScoped<IRedisService, RedisService>();
 
-// Add services to the container.
 builder.Services.AddStackExchangeRedisCache(o => {
     o.InstanceName = "redisProductDbApi";
     o.Configuration = "localhost:6381";
@@ -32,8 +31,6 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
 
