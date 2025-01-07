@@ -37,5 +37,3 @@ npm run dev
 ```
 
 have fun!
-
-Translated with DeepL.com (free version)
